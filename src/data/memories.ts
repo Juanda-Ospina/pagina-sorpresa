@@ -1,8 +1,3 @@
-// import image1 from "../assets/images/imagen1.jpg";
-// import image5 from "../assets/images/imagen5.jpg";
-// import image6 from "../assets/images/imagen6.jpg";
-// import image8 from "../assets/images/imagen8.jpg";
-// import image10 from "../assets/images/imagen10.jpg";
 
 export interface Memory {
   id: number;
