@@ -1,0 +1,168 @@
+.story {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+padding: clamp(5rem, 10vw, 9rem) 1.25rem;
+background:
+linear-gradient(
+180deg,
+var(--color-background) 0%,
+var(--color-background-soft) 50%,
+var(--color-background) 100%
+);
+}
+
+.backgroundGlow {
+position: absolute;
+z-index: -1;
+top: 18%;
+left: 50%;
+width: min(90vw, 650px);
+aspect-ratio: 1;
+border-radius: 50%;
+background: rgba(201, 143, 139, 0.12);
+filter: blur(90px);
+transform: translateX(-50%);
+pointer-events: none;
+}
+
+.container {
+width: 100%;
+max-width: 790px;
+margin-inline: auto;
+}
+
+.header {
+margin-bottom: clamp(3rem, 7vw, 5rem);
+text-align: center;
+}
+
+.eyebrow {
+display: inline-block;
+margin-bottom: 1.25rem;
+color: var(--color-primary);
+font-size: 0.68rem;
+font-weight: 600;
+letter-spacing: 0.22em;
+}
+
+.header h2 {
+max-width: 700px;
+margin-inline: auto;
+font-family: var(--font-display);
+font-size: clamp(2.35rem, 6vw, 4.3rem);
+font-weight: 500;
+line-height: 1.08;
+letter-spacing: -0.035em;
+}
+
+.header h2 span {
+display: block;
+margin-top: 0.25rem;
+color: var(--color-primary);
+font-style: italic;
+}
+
+.divider {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+margin-top: 2rem;
+}
+
+.divider > span:first-child,
+.divider > span:last-child {
+width: 52px;
+height: 1px;
+background: var(--color-primary-light);
+opacity: 0.7;
+}
+
+.dividerHeart {
+color: var(--color-primary);
+font-size: 1.25rem;
+}
+
+.message {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1.8rem;
+text-align: center;
+}
+
+.paragraph,
+.finalParagraph {
+max-width: 620px;
+color: var(--color-text-soft);
+font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+font-weight: 400;
+line-height: 2;
+letter-spacing: 0.005em;
+}
+
+.highlight {
+color: var(--color-primary);
+font-weight: 500;
+}
+
+.finalParagraph {
+margin-top: 0.5rem;
+color: var(--color-text);
+}
+
+.closing {
+display: inline-block;
+margin-top: 0.25rem;
+color: var(--color-primary);
+font-family: var(--font-display);
+font-size: clamp(2rem, 5.5vw, 3.3rem);
+font-style: italic;
+font-weight: 600;
+line-height: 1.2;
+}
+
+.signature {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.4rem;
+margin-top: 3.5rem;
+color: var(--color-text-soft);
+font-family: var(--font-display);
+font-size: 1.3rem;
+font-style: italic;
+text-align: center;
+}
+
+.signatureHeart {
+color: var(--color-primary);
+font-family: var(--font-body);
+font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+.story {
+padding-inline: 2rem;
+}
+
+.message {
+gap: 2.1rem;
+}
+
+.paragraph,
+.finalParagraph {
+line-height: 2.15;
+}
+
+.signature {
+margin-top: 4.5rem;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.story * {
+scroll-behavior: auto;
+}
+}
