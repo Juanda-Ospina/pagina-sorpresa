@@ -1,8 +1,8 @@
-import image1 from "../assets/images/imagen1.jpg";
-import image5 from "../assets/images/imagen5.jpg";
-import image6 from "../assets/images/imagen6.jpg";
-import image8 from "../assets/images/imagen8.jpg";
-import image10 from "../assets/images/imagen10.jpg";
+// import image1 from "../assets/images/imagen1.jpg";
+// import image5 from "../assets/images/imagen5.jpg";
+// import image6 from "../assets/images/imagen6.jpg";
+// import image8 from "../assets/images/imagen8.jpg";
+// import image10 from "../assets/images/imagen10.jpg";
 
 export interface Memory {
   id: number;
@@ -15,35 +15,35 @@ export interface Memory {
 export const memories: Memory[] = [
   {
     id: 1,
-    image: image1,
+    image: "/images/Imagen1.jpg",
     caption: "Lugares para recordar.",
     rotation: -3,
     size: "medium",
   },
   {
     id: 2,
-    image: image6,
+    image: "/images/imagen6.jpg",
     caption: "Un momento de nunca olvidar.",
     rotation: 2,
     size: "large",
   },
   {
     id: 3,
-    image: image5,
+    image: "/images/imagen5.jpg",
     caption: "Siempre hay una razón para sonreír.",
     rotation: -2,
     size: "small",
   },
   {
     id: 4,
-    image: image10,
+    image: "/images/imagen10.jpg",
     caption: "Coleccionando momentos juntos.",
     rotation: 3,
     size: "medium",
   },
   {
     id: 5,
-    image: image8,
+    image: "/images/imagen8.jpg"    ,
     caption: "Y todavía faltan muchos.",
     rotation: -1,
     size: "large",
